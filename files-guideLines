@@ -1,14 +1,14 @@
-##For the client 
+## For the client 
 
 1- npm i
 2- npm start
 
-##For the admin dashboard
+## For the admin dashboard
 
 1- npm i
 2- npm start
 
-##For the server
+## For the server
 
 1- rename .env.exaple => .env
 2- composer install
