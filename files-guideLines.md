@@ -17,4 +17,8 @@
 ### 5- php artisan migrate => (php artisan migrate:fresh) to rebuild tables
 ### 6- php artisan serve
 
+## For the Model Api
+
+### 1- open cmd in the Api working directory
+### 2- py ZeAPI.py
 #########################################################################################
