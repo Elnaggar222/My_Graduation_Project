@@ -1,0 +1,77 @@
+.adminLoginFormContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://c1.wallpaperflare.com/preview/427/745/192/notebook-natural-laptop-macbook.jpg")
+      center;
+  background-size: cover;
+  position: absolute;
+  z-index: -100;
+}
+.adminLogin-form {
+  width: 80vw;
+  max-width: 350px;
+  padding: 20px;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  /* background-color: white; */
+}
+
+.adminHeaderLogin {
+  text-align: center;
+  color: darkblue;
+}
+
+.adminLoginLabel {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.adminLoginInput {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.adminLoginInput:focus-within{
+  outline: none;
+}
+.adminLoginBtn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: darkblue;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 auto 10px auto;
+}
+.adminLoginBtn[type="submit"] {
+  margin-top: 20px;
+}
+.adminLoginBtn:hover {
+  background-color: #0b0bb0;
+}
+.adminLoginBtn:active {
+  background-color: #060677;
+}
+.adminLoginBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.adminLoginError {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}

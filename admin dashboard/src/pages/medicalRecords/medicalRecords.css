@@ -1,0 +1,79 @@
+.userList {
+  flex: 4;
+}
+.userListuserData {
+  display: flex;
+  align-items: center;
+}
+.uploadDeleteAdminContainer{
+  display: flex;
+  align-items: center;
+}
+.uploadAdminButton {
+  color: darkblue;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.uploadAdminButton:disabled {
+  color: #555;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.uploadAdminButton:hover {
+  color: #0e0ec1;
+}
+.uploadAdminButton:disabled:hover {
+  color: #555;
+}
+.userListDeleteIcon {
+  color: red;
+  cursor: pointer;
+}
+
+.gridError {
+  color: red;
+  text-align: center;
+  margin-top: 100px;
+}
+.statusBtn {
+  width: 80px;
+  padding: 5px 7px;
+  border: none;
+  border-radius: 10px;
+  cursor: auto !important;
+}
+.statusBtn.approved {
+  background-color: #e5faf2;
+  color: #3bb077;
+}
+.statusBtn.waiting {
+  background-color: #fff0f1;
+  color: #d95087;
+}
+.dateTimeContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.dateInputAdmin,
+.timeInputAdmin {
+  width: 120px;
+  margin: 5px 0px;
+  background-color: #eeeef7;
+  border: none;
+  color: #555;
+  padding: 2px;
+}
+.modePercentage{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.modelPercentageIcon{
+  font-size: 15px !important;
+}

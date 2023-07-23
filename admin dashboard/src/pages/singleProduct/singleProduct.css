@@ -1,0 +1,109 @@
+.singleProduct {
+  flex: 4;
+  padding: 20px;
+}
+.singleProductTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.singleProductCreateButton {
+  width: 80px;
+  border: none;
+  padding: 5px;
+  background-color: teal;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.singleProductTop {
+  display: flex;
+  align-items: center;
+}
+.singleProductTopLeft {
+  flex: 1;
+}
+.singleProductTopRight {
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+}
+.singleProductInfoTop {
+  display: flex;
+  align-items: center;
+}
+.singleProductInfoTopImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.singleProductInfoName {
+  font-weight: 600;
+}
+.singleProductInfoBottom {
+  margin-top: 10px;
+}
+.singleProductInfoItem {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.singleProductInfoValue {
+  font-weight: 300;
+}
+.singleProductButtom {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+}
+.singleProductButtomForm{
+    display: flex;
+    justify-content: space-between;
+}
+.singleProductButtomFormLeft{
+    display: flex;
+    flex-direction: column;
+}
+.singleProductButtomFormLeft > label {
+    margin-bottom: 10px;
+    color: gray;
+}
+.singleProductButtomFormLeft > input{
+    margin-bottom: 10px;
+    border: none;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+}
+.singleProductButtomFormLeft > select {
+    margin-bottom: 10px;
+}
+.singleProductButtomFormRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.singleProductButtomFormRightUpload{
+    display: flex;
+    align-items: center;
+}
+.singleProductButtomFormRightImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.productUploadButton{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: darkblue;
+    color:white;
+    font-weight: 600;
+    cursor: pointer;
+  }

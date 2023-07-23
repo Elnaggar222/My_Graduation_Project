@@ -1,0 +1,89 @@
+body {
+  background-color: white !important;
+  /* height: 2000px; */
+}
+main {
+  position: relative;
+}
+.headerBack {
+  width: 100vw;
+  height: 104px;
+  background: var(--gradient-bg) !important;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+.scrolled {
+  opacity: 0;
+}
+.seperator {
+  width: 100%;
+  height: 104px;
+}
+.cont {
+  display: flex;
+}
+.patientAppointmentLeft {
+  flex: 1;
+  background-color: rgba(251, 251, 255);
+  height: calc(100vh - 104px);
+  position: sticky;
+  top: 88px;
+  z-index: 99;
+  padding: 20px;
+}
+.patientAppointmentLeftTitle {
+  margin-bottom: 50p;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.762);
+}
+.filterContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0px;
+  padding: 5px;
+}
+.filterContainer > label {
+  font-weight: 400;
+}
+.filterSelect {
+  border: none;
+  width: 100px;
+  color: rgba(0, 0, 0, 0.762);
+}
+.patientAppointmentRight {
+  flex: 4;
+  position: relative;
+}
+:global(.statusBtn) {
+  width: 99px;
+  padding: 5px 7px;
+  border: none;
+  border-radius: 10px;
+  cursor:auto !important;
+}
+:global(.statusBtn):global(.closed) {
+  background-color: #e5faf2;
+  color: #3bb077;
+}
+:global(.statusBtn):global(.scheduled) {
+  background-color: #fff0f1;
+  color: #d95087;
+}
+button:disabled{
+  filter: grayscale(100%) !important;
+  cursor:not-allowed !important;
+}
+a:disabled{
+  filter: grayscale(100%) !important;
+  cursor:not-allowed !important;
+}
+.spinnerContainer{
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+}

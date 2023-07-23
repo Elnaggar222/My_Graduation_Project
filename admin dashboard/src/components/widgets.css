@@ -1,0 +1,69 @@
+.widgetSmall {
+  flex: 1;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  margin-right: 20px;
+}
+.widgetSmTitle {
+  font-size: 22px;
+  font-weight: 600;
+}
+.widgetSmList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.widgetSmListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.widgetSmUser {
+  display: flex;
+  flex-direction: column;
+}
+
+.widgetSmUsername {
+  font-weight: 600;
+}
+
+.widgetSmUserTitle {
+  font-weight: 300;
+}
+
+.widgetSmButton {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 10px;
+  background-color: #eeeef7;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.widgetSmButton:hover{
+  background-color: darkblue;
+  color: white;
+}
+.widgetSmIcon {
+  font-size: 16px !important;
+  margin-right: 5px;
+}
+.newJoinLoading {
+  text-align: center;
+  color: darkblue;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.newJoinError {
+  text-align: center;
+  color: red;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 20px;
+}

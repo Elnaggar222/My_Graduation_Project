@@ -1,0 +1,34 @@
+:root {
+  --gradient-bg: linear-gradient(45deg, #121b1a, #1d1a2d);
+  --gradient-bg-transparet: linear-gradient(180deg, #000000b6, #00000079);
+  --logo-color: #dc3535;
+  --logo-text: #667eea;
+  --gradient-bg-light: linear-gradient(45deg, #283334, #303541);
+  --text-login: #4a5568;
+  --formTextColor: rgba(0, 0, 0, 0.6);
+}
+
+main {
+  min-height: calc(100vh - (66px + 56px));
+}
+
+body {
+  /* background-color: #d9d9d9 !important; */
+}
+
+.Auth_Layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ),
+  url("https://c1.wallpaperflare.com/preview/532/1002/497/doctor-surgeon-operation-instruments.jpg")
+    center;
+background-size: cover;
+position: absolute;
+z-index: -100;
+}

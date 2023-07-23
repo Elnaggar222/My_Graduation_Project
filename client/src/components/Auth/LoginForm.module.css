@@ -1,0 +1,123 @@
+.bg-color {
+  width: 100vw;
+  height: 100vh;
+}
+.card {
+  font-family: "Roboto", sans-serif !important;
+  width: 330px;
+  border-radius: 0 !important;
+  position: relative;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  left: 8px;
+  bottom: -8px;
+  background-color: var(--logo-text);
+  z-index: -1;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  right: -8px;
+  bottom: -8px;
+  background-color: var(--logo-text);
+  z-index: -1;
+}
+.card button {
+  border-radius: 0;
+}
+.form_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.LogoItself {
+  fill: var(--logo-color);
+  transform: scale(2);
+  margin: 7px 0;
+}
+.form_header div:nth-child(2) {
+  color: var(--logo-text);
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0;
+}
+.form_header div:nth-child(3) {
+  color: var(--text-login) !important;
+  font-size: 11px;
+  margin-bottom: 18px;
+}
+.card input {
+  border: none;
+  border-radius: 0;
+  caret-color: var(--logo-text);
+  border-bottom: 1px solid rgba(102, 126, 234, 0.5);
+  padding: 0.5rem 1.5rem;
+}
+.card input::placeholder {
+  color: var(--formTextColor) !important;
+  font-size: 13px;
+}
+/* ## */
+.svg-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.svg-input svg {
+  width: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 5px;
+}
+.form_button {
+  font-size: 15px;
+  background-color: var(--logo-text) !important;
+  border: none !important;
+}
+.form_button:hover {
+  background-color: #3c53b9 !important;
+}
+.form_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 14px;
+}
+.footer-text {
+  color: var(--text-login) !important;
+  font-size: 11px !important;
+}
+.registerNewAcc {
+  width: 100%;
+  margin-bottom: 10px;
+  color: var(--text-login) !important;
+  border-color: var(--text-login) !important;
+  margin-top: 9px;
+}
+.form_footer button:hover {
+  color: #fff !important;
+  border-color: transparent !important;
+}
+.chooseLogButton {
+  --bs-btn-border-color: var(---logo-color) !important;
+  --bs-btn-hover-bg: var(--logo-color) !important;
+  --bs-btn-color: var(--logo-text) !important;
+  --bs-btn-hover-color: #fff !important;
+  --bs-btn-active-bg: var(--logo-text) !important;
+  --bs-btn-active-color: #fff !important;
+  align-self: flex-end;
+  margin-top: 5px;
+}
+.chooseLogButton svg {
+  width: 20px;
+  fill: var(--logo-text);
+}
+.chooseLogButton:hover svg {
+  fill: white;
+}

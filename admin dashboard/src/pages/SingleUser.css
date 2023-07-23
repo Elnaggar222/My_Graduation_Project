@@ -1,0 +1,124 @@
+.singleUser {
+  flex: 4;
+  padding: 20px;
+}
+.userTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userAddButton {
+  width: 80px;
+  border: none;
+  padding: 5px;
+  background-color: teal;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+.userShowAndUpdateContainer {
+  display: flex;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+.userShow {
+  flex: 1;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+}
+.userShowTop {
+  display: flex;
+  align-items: center;
+}
+.userShowTopImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.userShowTopInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.userShowTopInfoName {
+  font-weight: 600;
+}
+.userShowTopInfoTitle {
+  font-weight: 300;
+}
+.userShowBottom {
+  margin-top: 20px;
+}
+.userShowBottomMainTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(175, 170, 170);
+}
+
+.userShowBottomInfo {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  color: #444;
+}
+.userShowBottomIcon {
+  font-size: 16px !important;
+}
+.userShowBottomTitle {
+  margin-left: 10px;
+}
+.userUpdate {
+  flex: 2;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  margin-left: 20px;
+}
+.userUpdateTitle {
+  font-size: 27px !important;
+  font-weight: 600;
+}
+.userUpdateForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.userUpdateItem {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.userUpdateItem > label {
+  font-size: 17px !important;
+  margin-bottom: 5px !important;
+  font-weight: 500 !important;
+}
+.userUpdateInput {
+  border: none;
+  width: 250px;
+  height: 30px;
+  border-bottom: 1px solid gray;
+}
+.userUpdateRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.genderSelectNew{
+  border: none;
+  width: 250px;
+  height: 30px;
+  border-bottom: 1px solid gray;
+}
+.userUpdateButton {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  width: 200px;
+  margin-top: 30px;
+}

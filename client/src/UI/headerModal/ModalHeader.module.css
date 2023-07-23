@@ -1,0 +1,102 @@
+.links{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+.links li {
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s;
+    position: relative; /* parent here not there */
+}
+.links li:first-child{
+    padding-top: 20px;
+}
+.links li:last-child{
+    padding-bottom: 20px;
+}
+
+
+.links .nav-link{  /* parent  not here */
+    white-space: nowrap;
+    font-size: 18px;
+    margin: 15px 0px 0px 30px;
+    display: block;
+    transition: all 0.3s;
+    color:rgba(39,51,58,0.6);
+    text-decoration: none;
+    font-weight: 700;
+}
+.links .nav-link:hover{
+    color:rgba(39,51,58);
+}
+
+.links .nav-link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height:1px;
+    left:0;
+    bottom: 0;
+    background-color: #DDD;
+    transition: all 0.3s;
+}
+
+.links .nav-link:hover::after{
+    background-color: rgba(39,51,58);
+}
+
+.links .secondChild .nav-link:hover::after{
+    background-color: #DDD;
+}
+.links .firstChild .nav-link::after{
+    background-color: transparent;
+}
+
+.links .nav-link:global(.active)::after{
+    background-color: rgba(39,51,58);
+}
+.links .nav-link:global(.active){
+    color:rgba(39,51,58);
+}
+
+.links .firstChild .nav-link ,.links .secondChild .nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links .firstChild .nav-link{
+    background-color:var(--logo-color);
+    color: #FFF;
+    width: 150px;
+    margin: auto;
+    padding: 10px 70px;
+}
+.links .firstChild .nav-link:hover{
+    background-color:#a41111;
+}
+.links .secondChild .nav-link{
+    background-color:var(--logo-text);
+    color: #FFF;
+    width: 150px;
+    margin: auto;
+    padding: 10px 70px;
+}
+.links .secondChild .nav-link:hover{
+    background-color: #233356;
+}
+.requestButton {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+.logoutLi{
+    text-align: center;
+}
+.logoutButton{
+    --bs-btn-font-weight: 600 !important;
+    margin: auto !important;
+    padding: 10px 40px !important;
+}

@@ -1,0 +1,250 @@
+.firstHeroContainer {
+  position: relative;
+}
+.padgeContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-20px);
+  z-index: 1;
+}
+.padgeContainer > h1 {
+    color: white;
+    font-weight: 600;
+    margin-top: -30px;
+}
+.padgeContainer > blockquote {
+    color: #DDD;
+    width: 70%;
+    height: 80px;
+    overflow: hidden;
+    line-height: 1.5;
+    margin-top: 10px;
+}   
+.padgeContainer > button {
+    border: none;
+    background-color: var(--logo-color);
+    color: #d5cfcf;
+    padding: 10px 15px;
+    margin-top: -10px;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+.padgeContainer > button:hover{
+    background-color:#a41111;
+    color: white;
+}
+
+.first_hero_img {
+  height: 365px;
+  position: relative;
+}
+
+.first_hero_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.first_hero_img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+}
+
+/* ######## */
+
+.second_section {
+  position: relative;
+}
+
+.second_hero_container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .second_hero_container {
+    flex-direction: column;
+  }
+}
+
+.second_hero_container p {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 7px 7px 10px 0 rgba(0, 0, 0, 0.5),
+    -0.08px -0.08px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: -5px;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  padding: 18px;
+}
+
+:global(.heart_message) {
+  display: inline-block;
+  margin-bottom: 30px;
+  text-indent: 20px;
+  font-weight: bold;
+  font-size: 70px;
+}
+
+:global(.ident-big) {
+  display: inline-block;
+  text-indent: 100px;
+}
+
+:global(.hands_message) {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 70px;
+  text-indent: 80px;
+}
+@media (max-width: 768px) {
+  .circle_hero {
+    display: none;
+  }
+}
+.circle_hero img {
+  height: 300px;
+  border-radius: 50%;
+  position: relative;
+  top: 90px;
+  animation: up-and-down 5s linear infinite;
+  box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.5),
+    -3px 3px 7px 0 rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 993px) {
+  .circle_hero img {
+    display: none;
+  }
+}
+.background {
+  height: 700px;
+  margin: 15px 0px;
+  position: relative;
+}
+.background::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* #### */
+/* animation heart */
+.heart_container {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0b1522;
+  border-radius: 20px;
+  box-shadow: 7px 7px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.heart {
+  height: 100px;
+  width: 100px;
+  background: #e72020;
+  position: relative;
+  transform: rotate(-45deg);
+  box-shadow: -10px 10px 90px #e72020;
+  animation: heart 0.6s linear infinite;
+  margin-top: 20px;
+}
+.heart::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: #e72020;
+  top: -50%;
+  border-radius: 50px;
+  box-shadow: -10px -10px 90px #e72020;
+}
+.heart::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: #e72020;
+  right: -50%;
+  border-radius: 50px;
+  box-shadow: 10px 10px 90px #e72020;
+}
+/* ####### */
+@keyframes up-and-down {
+  0%,
+  100% {
+    top: 90px;
+  }
+  50% {
+    top: -90px;
+  }
+}
+@keyframes heart {
+  0% {
+    transform: rotate(-45deg) scale(1.07);
+  }
+  80% {
+    transform: rotate(-45deg) scale(1);
+  }
+  100% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+}
+
+/* ## */
+/* Beating */
+.Beating {
+  height: 550px;
+  /* width: 745px; */
+  width: fit-content;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 25px var(--logo-color));
+}
+
+svg .pathdraw {
+  stroke: var(--logo-color);
+  fill: transparent;
+  stroke-width: 6px;
+  animation: animate 1.5s linear infinite;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+}
+@media (max-width: 768px) {
+  svg .pathdraw {
+    transform: translateX(-160px);
+  }
+}
+@keyframes animate {
+  to {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}

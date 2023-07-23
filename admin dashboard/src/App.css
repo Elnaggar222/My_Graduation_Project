@@ -1,0 +1,15 @@
+*{
+  box-sizing: border-box !important;
+}
+:root {
+    --box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.20);
+  }
+
+.AppContainer{
+    display: flex;
+    margin-top: 10px;
+}
+.Link{
+  text-decoration: none;
+  color: inherit;
+}

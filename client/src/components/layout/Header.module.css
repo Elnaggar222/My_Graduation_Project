@@ -1,0 +1,196 @@
+.header{
+    padding: 1.5rem 0 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    transition: all 0.3s;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.header :global(.navbar-brand){
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.header :global(.navbar-brand) a {
+    text-decoration: none;
+}
+
+.header:global(.scrolled){
+    background: var(--gradient-bg);
+    padding: 1rem 0 !important;
+}
+
+.navLink{
+    text-decoration: none;
+    color: #d5cfcf;
+    font-size: 16px;
+    margin-right: 5px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.navLink:hover{
+    color: #FFF;
+}
+
+.navLink::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--logo-text);
+    height: 3px;
+    width: 0px;
+    transition: all 0.3s;
+}
+.navLink:hover::after{
+    width: 100%;
+    opacity: 0.9;
+}
+.navLink:global(.active):hover::after{
+    width: 0;
+}
+:global(.nav-link):nth-child(3) .navLink:hover::after{
+    width: 0px;
+}
+:global(.nav-link):nth-child(4) .navLink:hover::after{
+    width: 0px;
+    
+}
+
+:global(.nav-link):nth-child(3) .navLink{
+    background-color: var(--logo-color);
+    padding:0px 15px;
+}
+:global(.nav-link):nth-child(3) .navLink:hover{
+    background-color:  #a41111;
+}
+:global(.nav-link):nth-child(4) .navLink{
+    background-color: var(--logo-text);
+    padding:0px 15px;
+}
+:global(.nav-link):nth-child(4) .navLink:hover{
+    background-color:  #233356;
+}
+.navLink:global(.active){
+    color: #FFF;
+    border-bottom:3px solid var(--logo-text);
+}
+.appointmentButton{
+    --bs-btn-bg:var(--logo-text) !important;
+    --bs-btn-border-color:var(--logo-text) !important;
+    --bs-btn-hover-bg:#475bb5 !important;
+    --bs-btn-active-bg:#37478c !important;
+}
+.logoutButton{
+    --bs-btn-font-weight: 600 !important;
+    margin-left: 12px;
+}
+.LogoItself {
+    display: inline-block;
+    fill: #DC3535;
+    transform: scale(2);
+    margin-left: 10px;
+    animation: heart 0.6s linear infinite;
+}
+@keyframes heart{
+    0% {
+        transform: scale(2.6);
+    }
+    80% {
+        transform: scale(2.4);
+    }
+    100% {
+        transform: scale(1.8);
+      
+    }
+}
+
+.heart_logo div {
+    font-size: 25px;
+    color:var(--logo-text);
+}
+
+/* ################ */
+
+@media (min-width: 769px) {
+    .choicesIcon{
+        display: none !important;
+    }
+}
+@media (max-width: 768px) {
+    .choicesIcon{
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .navLink{
+        display: none;
+    }
+    .appointmentButton{
+        display: none !important;
+    }
+    .logoutButton{
+        display: none !important;
+    }
+}
+
+.choicesIcon .bar{
+    height: 2px;
+    width: 27px;
+    background-color: #FFF;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.animate:first-child{
+    transform: translateY(7px) rotate(45deg);
+}
+.animate:nth-child(2){
+    opacity: 0;
+}
+.animate:last-child{
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ## */
+/* OverLay and Modal */
+
+.Big_Overlay{
+    position: fixed;
+    top: 102.4px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    z-index:998;
+}
+
+.Modal-overlay{
+    position: fixed;
+    top: 85.5px;
+    left: 0;
+    width: 100vw;
+    height: 0;
+    overflow: hidden;
+    background-color:#FFF;
+    z-index: 999;
+    transition: all 0.5s;
+    box-shadow: 
+    0 2px 10px 0 rgba(0,0,0,0.7) ,
+    0.1px 0.1px 10px 0px rgba(0,0,0,0.7) inset ,
+    0.1px -0.1px 10px 0px rgba(0,0,0,0.7) inset;
+}
+:global(.appear).Modal-overlay{
+    /* width: 75vw; */
+    height: 200px;
+    overflow: auto;
+}
+
+

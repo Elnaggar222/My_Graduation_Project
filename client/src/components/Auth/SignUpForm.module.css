@@ -1,0 +1,120 @@
+body{
+  background-color: #adc9e5 !important;
+}
+.card {
+  font-family: "Roboto", sans-serif !important;
+  background-color: #fff !important;
+  width: 360px;
+  border-radius: 0 !important;
+  position: relative;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  left: 8px;
+  bottom: -8px;
+  background-color: var(--logo-text);
+  z-index: -1;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  right: -8px;
+  bottom: -8px;
+  background-color: var(--logo-text);
+  z-index: -1;
+}
+.card button {
+  border-radius: 0;
+}
+.card input {
+  border-radius: 0;
+  caret-color: var(--logo-text);
+}
+.form_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.LogoItself {
+  fill: #dc3535;
+  transform: scale(2);
+  margin: 7px 0;
+}
+.form_header div:nth-child(2) {
+  color: var(--logo-text);
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0;
+}
+.form_header div:nth-child(3) {
+  color: var(--text-login) !important;
+  font-size: 11px;
+  margin-bottom: 18px;
+}
+.card input {
+  border: none;
+  border-bottom: 1px solid rgba(102, 126, 234, 0.5);
+  padding: 0.5rem 1.5rem;
+}
+.card input[type="checkbox"] {
+  border: 1px solid var(--logo-text);
+  padding: 0;
+}
+.card input[type="checkbox"]:focus {
+  border: none;
+}
+.card input[type="checkbox"]:global(.is-invalid) {
+  border: 1px solid #dc3545 !important;
+}
+:global(.form-check-label) {
+  color: var(--text-login) !important;
+  font-size: 14px;
+}
+.card input::placeholder {
+  color: var(--formTextColor) !important;
+  font-size: 13px;
+}
+.svg-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.svg-input svg {
+  width: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 5px;
+}
+.trans-svg {
+  fill: rgba(0, 0, 0, 0.5);
+}
+.selectOptions {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(102, 126, 234, 0.5);
+  padding: 0.5rem 0.5rem;
+  font-size: 13px;
+  outline: none;
+  color: var(--formTextColor) !important;
+}
+.createAccountSvg {
+  width: 15px;
+  fill: white;
+  margin-right: 10px;
+}
+.form_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  background-color: var(--logo-text) !important;
+  border: none !important;
+}
+.form_button:hover {
+  background-color: #3c53b9 !important;
+}
